@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  height: 90px;
+  background-color:dodgerblue;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo img {
+  color: cornflowerblue;
+  width: 80px;
+}
+
+.navbar .logo span {
+  font-weight: 700;
+  color: white;
+  margin-left: -90px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid cyan;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: white;
+  padding: 8px 16px;
+}
+.menu-links a:hover {
+  background:lightskyblue;
+  transition: 0.5s;
+}
+.menu button {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+.menu button:hover {
+  background-color: white;
+  color: dodgerblue;
+}
+
+.menu-btn {
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+.nav-title a{
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: #101720;
+    }
+}
+
+@media (max-width: 54rem) {
+  .menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar .logo img {
+    width: 45px;
+  }
+
+  .navbar .logo span {
+    display: none;
+  }
+  
+  .nav-title a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+  }
+}

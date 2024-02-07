@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">A Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us better.</p>
+    </header>
+    <form id="survey-form" action="/survey/submit" method="post">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Your Name" required>
+
+        <label id="email-label" for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter Your Email" required>
+
+        <label id="number-label" for="number">Age (Optional 1-199)</label>
+        <input type="number" id="number" min="1" max="199" placeholder="Enter Your Age" required>
+
+        <fieldset>
+            <legend>Select Technologies to Improve</legend>
+
+            <label for="html">
+                <input name="tech" type="radio" id="html" value="Html" checked /> 
+                HTML
+            </label>
+
+            <label for="css">
+                <input name="tech" type="radio" id="css" value="CSS" checked /> 
+                CSS
+            </label>
+
+            <label for="js">
+                <input name="tech" type="radio" id="js" value="JavaScript" checked /> 
+                JavaScript
+            </label>
+
+            <label for="react">
+                <input name="tech" type="radio" id="react" value="React" checked /> 
+                React
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tech Skills to Develop</legend>
+
+            <label for="vue">
+                <input name="frameworks" type="checkbox" id="vue" value="Vue.js" checked /> 
+                Vue.js
+            </label>
+            
+            <label for="angular">
+                <input name="frameworks" type="checkbox" id="angular" value="AngularJS"  /> 
+                AngularJS
+            </label>
+            
+            <label for="react_native">
+                <input name="frameworks" type="checkbox" id="react_native" value="React Native"  /> 
+                React Native
+            </label>
+            
+        </fieldset>
+
+        <label class="select-label">Where did you hear about us?</label>
+        <select name="dropdown" id="dropdown">
+            <option value="0" disabled>Select an Option</option>
+            <option value="1" selected>LinkedIn</option>
+            <option value="2">Twitter</option>
+            <option value="3">YouTube</option>
+            <option value="4">Podcast</option>
+        </select>
+
+        <label class="select-label">How likely are you to recommend our product or service?</label>
+        <select name="dropdown" id="dropdown">
+            <option value="0" disabled>Select an Option</option>
+            <option value="1" selected>*</option>
+            <option value="3">***</option>
+            <option value="4">****</option>
+            <option value="5">*****</option>
+        </select>
+
+        <p for="comment">Comments:</p>
+        <textarea name="comment" id="comment" placeholder="Enter Your Comment"></textarea>
+        
+        <input id="submit" type="submit" value="Submit"> 
+    </form>
+    <footer>
+      <p class="content">&copy; 2024 Surveys, Inc.</p>
+      <p><a href='../'>Ana menü</a></p>
+    </footer>
+</body>
+</html>

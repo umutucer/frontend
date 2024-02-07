@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a:visited {
+    color: #fff;;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  footer a:active {
+    color: brown;
+  }
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 12px;
+}
+
+form {
+    width: 95%;
+    margin: 25px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+}
+
+.select-label {
+    margin-top: 5px;
+}
+
+select {
+  margin-bottom: 10px 0 0 0;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    height: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+fieldset {
+    border: none ;
+    padding: 1rem 0;
+    margin-top: 5px;
+  }
+
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+
+  fieldset legend {
+      font-size: 17px;
+      flex: 1;
+  }
+  
+  fieldset input[type="radio"] {
+      margin-right: 12px;
+  }
+  
+  fieldset input[type="checkbox"] {
+      margin-right: 12px;
+  }
