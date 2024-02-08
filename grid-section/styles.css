@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #edf2f8;
+    font-family: "Barlow Semi Condensed", "Microsoft YaHei", Arial;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+        "dv1 dv1 dv2 lst"
+        "dv3 dv4 dv4 lst";
+  }
+
+  .card {            
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      margin: 20px;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .card-header h3 {
+    font-size: 15px;
+  }
+
+  .card-header p {
+    opacity: 50%;
+  }
+
+  .card-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #996ed9;
+    margin-right: 10px;
+  }
+
+  .caption {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.4;
+    opacity: 70%;
+  }
+
+  .dv1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+    color: #edf2f8;
+    grid-area: dv1;
+  }
+  .dv2 {
+    background-color: hsl(217, 19%, 35%);
+    color: #edf2f8;
+    grid-area: dv2;
+  }
+  .dv3 {
+    grid-area: dv3;
+  }
+  
+  .dv4 {
+    background-color: hsl(219, 29%, 14%);
+    color: #edf2f8;
+    grid-area: dv4;
+  }
+
+  .lst {
+    grid-area: lst;
+  }
+
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
