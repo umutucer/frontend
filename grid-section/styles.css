@@ -88,6 +88,18 @@ body {
     grid-area: lst;
   }
 
+  @media (max-width: 768px) {            
+    .container {                
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:  
+        "dv1"
+        "dv2"
+        "dv3"
+        "dv4"
+        "lst";
+    }
+  }
 
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
