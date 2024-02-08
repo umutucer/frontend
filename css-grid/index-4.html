@@ -11,12 +11,25 @@
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-
-            gap: 10px;
+            grid-template-columns: repeat(3,20%);
+            grid-template-rows: repeat(3,20%);
 
             background-color: brown;
             padding: 20px;
+
+            gap: 10px;
+            height: 600px;
+
+            place-content: start center;
+        }
+        .item:first-child {
+
+        }
+        .item:last-child {
+            
+        }
+        .item:nth-child(odd) {
+            color:red;
         }
         .item {
             background-color: goldenrod; 
@@ -29,10 +42,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="item">Grid item 1</div>
-        <div class="item">Grid item 2</div>
-        <div class="item">Grid item 3</div>
-        <div class="item">Grid item 4</div>
+        <div class="item">Grid 1</div>
+        <div class="item">Grid 2</div>
+        <div class="item">Grid 3</div>
+        <div class="item">Grid 4</div>
+        <div class="item">Grid 5</div>
+        <div class="item">Grid 6</div>
     </div>
 </body>
 </html>
